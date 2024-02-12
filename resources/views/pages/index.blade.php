@@ -9,20 +9,22 @@
         <ul class="d-flex flex-wrap">
             @foreach ($movies as $movie)
             <li class="list-group-item col-3 my-3 p-2">
-                <div class="border bg-primary text-white">
-                    <div>
-                        titolo:{{$movie['title']}}
+                <a href="#">
+                    <div class="border bg-primary text-white">
+                        <div>
+                            titolo:{{$movie['title']}}
+                        </div>
+                        <div>
+                            nazionalita:{{$movie['nationality']}}
+                        </div>
+                        <div>
+                            data uscita:{{$movie['date']}}
+                        </div>
+                        <div>
+                            voto generale:{{$movie['vote']}}
+                        </div>
                     </div>
-                    <div>
-                        nazionalita:{{$movie['nationality']}}
-                    </div>
-                    <div>
-                        data uscita:{{$movie['date']}}
-                    </div>
-                    <div>
-                        voto generale:{{$movie['vote']}}
-                    </div>
-                </div>
+                </a>
             </li>
             @endforeach
         </ul>

@@ -11,6 +11,7 @@
 </head>
 <body>
     <div class="text-center">
+        <!-- ricorda che bisogna cambiare nel env la password e il nome del database  -->
         @include('components.header')
         @yield('content')
     </div>
